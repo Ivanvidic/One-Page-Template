@@ -1,0 +1,95 @@
+/* ---------------------------------------------------------------- */
+/* 20.Contact Us                            
+/* ---------------------------------------------------------------- */
+.contact-form-wrap {
+    .form-group {
+        margin-bottom: 0;
+        position: relative;
+        .contact-form-control {
+            outline: none;
+            width: 100%;
+            border: none;
+            height: auto;
+            display: block;
+            color: $color_black;
+            margin-bottom: 30px;
+            position: relative;
+            transition: all 0.5s ease;
+            padding: 18px 20px 18px 50px;
+            box-shadow: 0 10px 30px 0 $color_shadow;
+            &:focus {
+                box-shadow: 0 15px 30px $color_shadow_hover;
+            }
+        }
+        i {
+            line-height: 60px;
+            color: $color_primary;
+            position: absolute;
+            pointer-events: none;
+            transition: all 0.25s ease;
+            top: 0;
+            left: 20px;
+        }
+        textarea.contact-form-control {
+            margin-bottom: 28px;
+        }
+    }
+}
+.google-maps {
+    line-height: 0;
+	iframe {
+        border: 0;
+		height: 500px;
+		width: 100% !important;
+	}
+}
+.contact-info-item {
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    background: $color_white;
+    transition: all 0.5s ease;
+    box-shadow: 0 10px 30px $color_shadow;
+    i {
+        width: 64px;
+        height: 64px;
+        font-weight: 600;
+        font-size: 25px;
+        text-align: center;
+        line-height: 64px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        color: $color_white;
+        background: $color_primary;
+        transition: all 0.5s ease;
+    }
+    .text {
+        h6 {
+            margin-bottom: 10px;
+        }
+        span {
+            display: block;
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0 23px 49px $color_shadow_hover;
+        transform: translateY(-10px);
+        i {
+            color: $color_white;
+            background: $color_dark_blue;
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+    .contact-form-wrap {
+        margin-top: 30px;
+    }
+}

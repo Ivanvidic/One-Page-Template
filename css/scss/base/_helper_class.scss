@@ -1,0 +1,166 @@
+/* ---------------------------------------------------------------- */
+/* 03.Helper Class                              
+/* ---------------------------------------------------------------- */
+.page-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.container {
+    max-width: 1200px;
+}
+.section {
+    padding: 100px 0;
+    overflow: hidden;
+   .section-heading {
+       margin-bottom: 50px;
+       text-align: center;
+       .section-title {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+            span {
+                margin-left: 15px;
+                color: $color_primary;
+            }
+            &:after,
+            &:before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &:after {
+                width: 100px;
+                height: 4px;
+                background: $color_primary;
+                bottom: 0;
+            }
+            &:before {
+                width: 20px;
+                height: 20px;
+                background: $color_primary;
+                z-index: 5;
+                bottom: -8px;
+                border:5px solid $color_white;
+            }
+       }
+   }
+}
+.inner-header-title {
+    margin-bottom: 25px !important;
+    position: relative;
+    padding-bottom: 20px;
+    display: block;
+    &:after, &:before {
+        content: "";
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        position: absolute;
+        border-radius: 5px;
+    }
+    &:after {
+        width: 100%;
+        background: rgba($color_black, 0.05);
+    }
+    &:before {
+        width: 60px;
+        z-index: 36;
+        background: $color_primary;
+    }
+}
+.bg-dark-blue {
+    .section-heading {
+        .section-title {
+            color: $color_white;
+             &:after {
+                 background: $color_white
+             }
+             &:before {
+                 background: $color_white;
+                 border:5px solid $color_dark_blue;
+             }
+        }
+        p {
+            color: $color_white;
+            opacity: 0.75;
+        }
+    }
+}
+.pb-minus-70 {
+    padding-bottom: 70px;
+}
+.bg-dark-blue {
+    background: $color_dark_blue;
+}
+.bg-jarallax-overlay {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $color_dark;
+        opacity: 0.8;
+    }
+}
+.jarallax {
+    position: relative;
+    z-index: 0;
+    .jarallax-img {
+        position: absolute;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+.border-none {
+    border: none;
+}
+// Owl Carousel
+.owl-carousel {
+    .owl-item img {
+        width: auto;
+        display: inline-block;
+    }
+    &.owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 30px;
+        line-height: 0;
+    }
+    &.owl-theme .owl-dots .owl-dot {
+        &.active {
+            span {
+                background: $color_primary;
+            }
+        }
+        span {
+            background: transparent;
+            border: 2px solid $color_primary;
+            margin: 0 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 0;
+            transition: all 0.5s ease;
+        }
+    }
+}
+.bg-dark-blue {
+    .owl-carousel {
+        &.owl-theme .owl-dots .owl-dot {
+            &.active {
+                span {
+                    background: $color_white;
+                }
+            }
+            span {
+                border: 2px solid $color_white;
+            }
+        }
+    }
+}

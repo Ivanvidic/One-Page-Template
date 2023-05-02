@@ -1,0 +1,97 @@
+/* ---------------------------------------------------------------- */
+/* 19.Latest Blog                               
+/* ---------------------------------------------------------------- */
+.blog-card {
+    margin-bottom: 30px;
+    position: relative;
+    background: $color_white;
+    transition: all 0.5s ease;
+    box-shadow: 0 10px 30px $color_shadow;
+    .img {
+        overflow: hidden;
+        position: relative;
+        img {
+            transition: all 0.5s ease; 
+        }
+        &:hover {
+           img {
+                transform: scale(1.03);
+           }
+        }
+    }
+    .body {
+        padding: 30px;
+        h5 {
+            margin-bottom: 10px;
+            a {
+                color: $color_dark_blue;
+                transition: all 0.5s ease; 
+                &:hover {
+                    color: $color_primary;
+                }
+            }
+        }
+        .meta {
+            margin-bottom: 10px;
+            span {
+                display: inline-block;
+                font-size: 15px;
+                i {
+                    color: $color_primary;
+                    margin-right: 10px;
+                }
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .blog-button {
+            z-index: 4;
+            padding: 8px 14px;
+            overflow: hidden;
+            font-size: 15px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            text-transform: capitalize;
+            transition: all 0.5s ease;
+            background: $color_primary;
+            color: $color_white !important;
+            &:after {
+                top: 0;
+                left: 0;
+                content: "";
+                z-index: -4;
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+                position: absolute;
+                transform-origin: 0 0;
+                transform: scaleX(0);
+                background: $color_dark_blue;
+                transition: all 0.5s ease;
+            }
+            &:hover {
+                color: $color_white !important;
+                &:after {
+                    width: 100%;
+                    transform: scale(1);
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0 15px 30px $color_shadow_hover;
+        .services-icon{
+            i {
+                &:before {
+                    color: $color_primary;
+                }
+            }
+        }
+    }
+}

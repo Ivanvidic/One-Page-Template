@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "flaticon_aquanaut";
+    src: url("./flaticon_aquanaut.ttf") format("truetype"),
+url("./flaticon_aquanaut.woff") format("woff"),
+url("./flaticon_aquanaut.woff2") format("woff2"),
+url("./flaticon_aquanaut.eot#iefix") format("embedded-opentype"),
+url("./flaticon_aquanaut.svg#flaticon_aquanaut") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_aquanaut !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-diving-mask:before {
+    content: "\f101";
+}
+.flaticon-ship-wheel:before {
+    content: "\f102";
+}
+.flaticon-chain:before {
+    content: "\f103";
+}
+.flaticon-anchor:before {
+    content: "\f104";
+}
+.flaticon-flippers:before {
+    content: "\f105";
+}
+.flaticon-diving:before {
+    content: "\f106";
+	color: white;
+	fill: white
+}

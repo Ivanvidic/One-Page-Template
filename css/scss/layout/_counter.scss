@@ -1,0 +1,57 @@
+/* ---------------------------------------------------------------- */
+/* 15.Counters                            
+/* ---------------------------------------------------------------- */
+.counter-item {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    &:after {
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        content: "";
+        position: absolute;
+        background: rgba($color_white, 0.5);
+    }
+    &:last-child::after {
+        display: none;
+    }
+    .counter-body {
+        h5 {
+            color: $color_white;
+            opacity: 0.75;
+            font-weight: 300;
+            font-size: 1.125rem;
+            font-family: $font_text;
+        }
+        span {
+            color: $color_white;
+            display: block;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-family: $font_heading; 
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+    .counter-item:nth-child(2) {
+        &:after {
+            display: none;
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:575.98px) {
+    .counter-item {
+        &:after {
+            display: none;
+        }
+    }
+}

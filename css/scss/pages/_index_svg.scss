@@ -1,0 +1,36 @@
+/* ---------------------------------------------------------------- */
+/* 28.Index Svg                               
+/* ---------------------------------------------------------------- */
+#svg-pattern-1 {
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: auto;
+	pointer-events: none;
+	transform: rotate(180deg);
+}
+#svg-pattern-2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	pointer-events: none;
+}
+#svg-pattern-3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	pointer-events: none;
+}
+/* ------------------------------------------------------------- */
+/* Responsive Media Query (1200px and up)
+/* ---------------------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+	#svg-pattern-3 {
+		bottom: -60px;
+	}
+}

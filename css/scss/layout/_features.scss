@@ -1,0 +1,97 @@
+/* ---------------------------------------------------------------- */
+/* 11.Features                                                 
+/* ---------------------------------------------------------------- */
+.features-inner {
+    .features-title {
+        margin-bottom: 20px;
+        color: $color_white;
+        span {
+            font-weight: 800;
+            font-style: italic;
+            color: $color_primary;
+            position: relative;
+        }
+    }
+    .features-text {
+        margin-bottom: 31px;
+        color: $color_white;
+        opacity: 0.75;
+    }
+    .features-list {
+        li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            i {
+                width: 42px;
+                height: 42px;
+                flex: 0 0 42px;
+                text-align: center;
+                line-height: 42px;
+                border-radius: 50%;
+                margin-right: 15px;
+                color: $color_white;
+                background: $color_primary;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .body {
+            h6 {
+                margin-bottom: 10px;
+                color: $color_white;
+            }
+            p {
+                color: $color_white;
+                opacity: 0.75;
+            }
+        }
+    }
+}
+.features-skills {
+    background: $color_white;
+    padding: 30px;
+    .skills-progress-wrap {
+        .skills-item {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 30px;
+            background: $color_white;
+            transition: all 0.5s linear;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .skills-progress-bar {
+                height: 4px;
+                position: relative;
+                background: $color_soft_grey;
+                margin-top: 10px;
+                overflow: hidden;
+                .skills-progress-value {
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    position: absolute;
+                    background: $color_primary;
+                }
+            }
+            .skills-item-text {
+                h6 {
+                    font-size: 17px;
+                    .skill-percent {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+    .features-inner {
+        margin-bottom: 30px;
+	}
+}

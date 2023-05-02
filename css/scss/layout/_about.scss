@@ -1,0 +1,65 @@
+/* ---------------------------------------------------------------- */
+/* 10.About                                                     
+/* ---------------------------------------------------------------- */
+.about-inner {
+    .about-title {
+        margin-bottom: 20px;
+        span {
+            font-weight: 800;
+            font-style: italic;
+            color: $color_primary;
+            position: relative;
+        }
+    }
+    .about-text {
+        margin-bottom: 30px;
+    }
+    .about-list {
+        margin-bottom: 30px;
+        li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            &:first-child {
+                i {
+                    background: $color_dark_blue;
+                }
+            }
+            i {
+                width: 64px;
+                height: 64px;
+                flex: 0 0 64px;
+                text-align: center;
+                line-height: 64px;
+                border-radius: 50%;
+                margin-right: 15px;
+                font-weight: 600;
+                font-size: 25px;
+                color: $color_white;
+                background: $color_primary;
+                transition: all 0.5s ease;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .body {
+                h6 {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .about-btn {
+        .video-button {
+            margin-left: 15px;
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 991.98px) {
+	.about-img {
+       margin-bottom: 30px;
+    }
+}

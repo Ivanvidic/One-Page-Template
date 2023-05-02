@@ -1,0 +1,107 @@
+/* ---------------------------------------------------------------- */
+/* 06.Form(Input, Comment)                             
+/* ---------------------------------------------------------------- */
+.pagination-wrap {
+    margin-top: 20px;
+    .pagination-link {
+        width: 50px;
+        height: 50px;
+        color: $color_dark_blue;
+        line-height: 50px;
+        margin: 0 5px 0 0;
+        font-weight: 600;
+        text-align: center;
+        display: inline-block;
+        background: $color_white;
+        transition: all 0.5s ease;
+        box-shadow: 0 10px 25px 0 $color_shadow;
+        &:hover,&.active {
+            background:$color_primary;
+            color: $color_white !important;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.comment-item {
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+    &:last-child {
+        border-bottom: 0;
+    }
+    p {
+        margin-bottom: 15px !important;
+    }
+    .comment-item-title {
+        margin-bottom: 10px;
+    }
+    img {
+        margin-right: 20px;
+    }
+    .comment-meta {
+        margin-bottom: 10px;
+        span {
+            display: inline-block;
+            margin-right: 10px;
+            color: $color_black;
+            font-size: 14px;
+            font-weight: 500;
+            i {
+                margin-right: 10px;
+                color: $color_primary;
+            }
+        }
+    }
+    .reply-btn {
+        display: inline-block;
+        font-weight: 500;
+        color: $color_black;
+        transition: all 0.25s ease;
+        &:hover {
+            color: $color_primary;
+        }
+        i {
+            vertical-align: -1px;
+            display: inline-block;
+            color: $color_primary;
+        }
+    }
+    &.sub-comment-item {
+        margin-left: 120px;
+    }
+}
+.leave-comment-wrapper {
+    .comment-form-group {
+        margin-bottom: 30px;
+        position: relative;
+        .form-control {
+            outline: none;
+            width: 100%;
+            border: none;
+            height: auto;
+            color: $color_black;
+            padding: 18px 20px 18px 50px;
+            border-radius: 5px;
+            display: block;
+            margin-bottom: 20px;
+            position: relative;
+            transition: all 0.5s ease;
+            box-shadow: 0 10px 30px 0 $color_shadow;
+            &:focus {
+                box-shadow: 0 15px 30px $color_shadow_hover;
+            }
+        }
+        span {
+            top: 0;
+            left: 20px;
+            line-height: 60px;
+            color: $color_primary;
+            position: absolute;
+            pointer-events: none;
+        }
+    }
+    button {
+        border: none;
+    }
+}

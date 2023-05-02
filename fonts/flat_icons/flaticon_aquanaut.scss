@@ -1,0 +1,49 @@
+$flaticon_aquanaut-font: "flaticon_aquanaut";
+
+@font-face {
+    font-family: $flaticon_aquanaut-font;
+    src: url("./flaticon_aquanaut.ttf?ac0d77d453cfff802314157ef2806f09") format("truetype"),
+url("./flaticon_aquanaut.woff?ac0d77d453cfff802314157ef2806f09") format("woff"),
+url("./flaticon_aquanaut.woff2?ac0d77d453cfff802314157ef2806f09") format("woff2"),
+url("./flaticon_aquanaut.eot?ac0d77d453cfff802314157ef2806f09#iefix") format("embedded-opentype"),
+url("./flaticon_aquanaut.svg?ac0d77d453cfff802314157ef2806f09#flaticon_aquanaut") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_aquanaut !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_aquanaut-map: (
+    "diving-mask": "\f101",
+    "ship-wheel": "\f102",
+    "chain": "\f103",
+    "anchor": "\f104",
+    "flippers": "\f105",
+    "diving": "\f106",
+);
+
+.flaticon-diving-mask:before {
+    content: map-get($flaticon_aquanaut-map, "diving-mask");
+}
+.flaticon-ship-wheel:before {
+    content: map-get($flaticon_aquanaut-map, "ship-wheel");
+}
+.flaticon-chain:before {
+    content: map-get($flaticon_aquanaut-map, "chain");
+}
+.flaticon-anchor:before {
+    content: map-get($flaticon_aquanaut-map, "anchor");
+}
+.flaticon-flippers:before {
+    content: map-get($flaticon_aquanaut-map, "flippers");
+}
+.flaticon-diving:before {
+    content: map-get($flaticon_aquanaut-map, "diving");
+}

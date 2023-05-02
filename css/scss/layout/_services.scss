@@ -1,0 +1,51 @@
+/* ---------------------------------------------------------------- */
+/* 12.Services                            
+/* ---------------------------------------------------------------- */
+.services-item {
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    background: $color_white;
+    transition: all 0.5s ease;
+    box-shadow: 0 10px 30px $color_shadow;
+    .services-icon{
+        i {
+            &:before {
+                font-size: 100px;
+                margin-left: 0;
+                line-height: 1;
+                display: inline-block;
+                text-align: center;
+                color: $color_dark_blue;
+                transition: all 0.5s ease;
+            }
+        }
+        margin-bottom: 20px;
+    }
+    .services-body {
+        h5 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            color: $color_black;
+            position: relative;
+            font-weight: 500;
+            transition: all 0.5s ease;
+        }
+    }
+    &:hover {
+        box-shadow: 0 23px 49px $color_shadow_hover;
+        transform: translateY(-10px);
+        .services-icon{
+            i {
+                &:before {
+                    color: $color_primary;
+                }
+            }
+        }
+    }
+}

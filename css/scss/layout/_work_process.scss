@@ -1,0 +1,62 @@
+/* ---------------------------------------------------------------- */
+/* 13.Work Process                           
+/* ---------------------------------------------------------------- */ 
+.work-process-inner {
+    .work-process-title {
+        margin-bottom: 20px;
+        color: $color_white;
+        span {
+            font-weight: 800;
+            font-style: italic;
+            color: $color_primary;
+            position: relative;
+        }
+    }
+    .work-process-text {
+        margin-bottom: 28px;
+        color: $color_white;
+        opacity: 0.75;
+    }
+    .work-process-list {
+        li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            position: relative;
+            i {
+                width: 64px;
+                height: 64px;
+                flex: 0 0 64px;
+                text-align: center;
+                line-height: 64px;
+                border-radius: 50%;
+                margin-right: 15px;
+                font-weight: 600;
+                font-size: 25px;
+                color: $color_white;
+                background: $color_primary;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .body {
+            h6 {
+                margin-bottom: 10px;
+                color: $color_white;
+            }
+            p {
+                color: $color_white;
+                opacity: 0.75;
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 992px) {
+	.work-process-img {
+        margin-bottom: 30px;
+    }
+}

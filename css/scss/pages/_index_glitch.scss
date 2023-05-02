@@ -1,0 +1,31 @@
+/* ---------------------------------------------------------------- */
+/* 29.Index Glitch                      
+/* ---------------------------------------------------------------- */
+.glitch-img-banner {
+    z-index: 44;
+    .overlay-glitch {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 45;
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
+        background: $color_dark_blue;
+    }
+    .glitch-img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .container {
+        position: relative;
+        z-index: 56;
+    }
+}
